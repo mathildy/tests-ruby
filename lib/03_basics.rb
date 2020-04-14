@@ -22,3 +22,7 @@ end
 def array_42(array)
     return array.include? 42
 end
+
+def magic_array(a)
+    return a.flatten.sort.map{|x| x*2}.reject{|y| y%3 == 0}.uniq
+  end
